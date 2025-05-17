@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VehiTrack - Cadastro de Marca</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <div id="customAlert"></div>
+  <h1>VehiTrack</h1>
+  <button onclick="location.href='index.html'">Voltar</button>
+  <h2>Cadastrar Marca</h2>
+
+  <form id="marcaForm">
+    <label for="nome">Nome da Marca:</label>
+    <input type="text" id="nome" required />
+
+    <button type="submit">Cadastrar Marca</button>
+    <button type="button" id="btnCancelar" style="display:none;">Cancelar</button>
+  </form>
+
+  <h2>Marcas Cadastradas</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Nome</th>
+        <th>Opções</th>
+      </tr>
+    </thead>
+    <tbody id="marcasBody">
+      <!-- Linhas de veículos serão inseridas aqui -->
+    </tbody>
+  </table>
+
+  <script src="/js/cadastroMarca.js" defer></script>
+</body>
+</html>

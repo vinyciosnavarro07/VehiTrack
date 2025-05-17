@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VehiTrack - Cadastro de Tipo de Veículo</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <div id="customAlert"></div>
+  <h1>VehiTrack</h1>
+  <button onclick="location.href='index.html'">Voltar</button>
+  <h2>Cadastrar Tipo de Veículo</h2>
+
+  <form id="tipoVeiculoForm">
+    <label for="descricao">Descrição:</label>
+    <input placeholder="Ex: hatchback, SUV " type="text" id="descricao" required />
+
+    <button type="submit">Cadastrar Tipo</button>
+    <button type="button" id="btnCancelar" style="display:none;">Cancelar</button>
+  </form>
+
+  <table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Descrição</th>
+      <th>Opções</th>
+    </tr>
+  </thead>
+  <tbody id="tipoVeiculosBody"></tbody>
+</table>
+
+  <script src="/js/cadastroTipoVeiculo.js" defer></script>
+</body>
+</html>

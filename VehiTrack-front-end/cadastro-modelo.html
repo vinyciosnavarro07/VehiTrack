@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VehiTrack - Cadastro de Modelos</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <div id="customAlert"></div>
+  <h1>VehiTrack</h1>
+  <button onclick="location.href='index.html'">Voltar</button>
+  <h2>Cadastrar Modelo</h2>
+
+  <form id="modeloForm">
+    <label for="nome">Nome do Modelo:</label>
+    <input placeholder="Ex: Gol 1.6" type="text" id="nome" required />
+
+    <label for="marca">Marca:</label>
+    <select id="marca" required>
+      <option value="">Selecione uma marca</option>
+    </select>
+
+    <label for="tipoVeiculo">Tipo de Veículo:</label>
+    <select id="tipoVeiculo" required>
+      <option value="">Selecione um tipo</option>
+    </select>
+
+    <button type="submit">Cadastrar Modelo</button>
+    <button type="button" id="btnCancelar" style="display:none;">Cancelar</button>
+  </form>
+
+  <table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nome</th>
+      <th>Marca</th>
+      <th>Tipo Veículo</th>
+      <th>Opções</th>
+    </tr>
+  </thead>
+  <tbody id="modelosBody"></tbody>
+</table>
+
+  <script src="/js/cadastroModelo.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VehiTrack - Cadastro de Veículos</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <div id="customAlert"></div>
+
+  <h1>VehiTrack</h1>
+  <button onclick="location.href='index.html'">Voltar</button>
+
+  <h2>Cadastrar Veículo</h2>
+  <form id="veiculoForm">
+    <label for="modelo">Modelo:</label>
+    <select id="modelo" required>
+      <option value="">Selecione um modelo</option>
+    </select>
+
+    <label for="ano">Ano de Fabricação:</label>
+    <input type="number" id="ano" min="1900" max="2100" required />
+
+    <label for="cor">Cor:</label>
+    <input type="text" id="cor" required />
+
+    <label for="preco">Preço (R$):</label>
+    <input type="number" id="preco" step="0.01" min="0" required />
+
+    <label for="quilometragem">Quilometragem:</label>
+    <input type="number" id="quilometragem" min="0" required />
+
+    <label for="status">Status:</label>
+    <select id="status" required>
+      <option value="DISPONIVEL">Disponível</option>
+      <option value="VENDIDO">Vendido</option>
+      <option value="INDISPONIVEL">Indisponível</option>
+    </select>
+
+    <button type="submit">Cadastrar</button>
+    <button type="button" id="btnCancelar" style="display:none;">Cancelar</button>
+  </form>
+
+  <h2>Veículos Cadastrados</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Modelo</th>
+        <th>Ano</th>
+        <th>Cor</th>
+        <th>Preço (R$)</th>
+        <th>Quilometragem</th>
+        <th>Status</th>
+        <th>Opções</th>
+      </tr>
+    </thead>
+    <tbody id="veiculosBody">
+      <!-- Linhas de veículos serão inseridas aqui -->
+    </tbody>
+  </table>
+
+  <script src="/js/cadastroVeiculo.js" defer></script>
+</body>
+</html>
