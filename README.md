@@ -1,4 +1,4 @@
-# 📚 Sistema de Gerenciamento VehiTrack
+# 🚗 Sistema de Gerenciamento VehiTrack
 
 Este projeto é um sistema completo de gerenciamento de concessionárias, desenvolvido com **Java Spring Boot** no backend e **HTML/CSS/JavaScript** no frontend. O sistema permite cadastrar, editar, excluir e listar carros, modelos, marcas e tipos de veiculo.
 
